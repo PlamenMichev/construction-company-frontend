@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, span, a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -42,4 +42,3 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
-

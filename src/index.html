@@ -1,71 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Bob's construction company</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
-<body>
-    <header>
-        <nav>
-            <a>
-                <img src="../assets/images/logo.png" alt="Bob's company logo">
-            </a>
-            <ul class="ui-links">
-                <li><a href="prices.html">Prices</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="current-project.html">Ongoing Project</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div></div>
-        </nav>
+  </head>
 
-        <section class="carousel-section">
-            <img src="https://placehold.co/600x400" alt="">
-        </section>
-    </header>
+  <body>
 
+    <!--Toma Alexandru-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center px-4">
+
+      <a class="navbar-brand flex-grow-1" href="index.html">
+        <img
+          src="../assets/images/logo.png"
+          alt="Logo"
+          class="rounded-pill logo"
+        />
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="current-project.html">Ongoing project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+    <!-- Carousel -->
+    <div id="preview-carousel" class="carousel slide w-75 mt-5 mx-auto" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#preview-carousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#preview-carousel"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#preview-carousel"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="../src/images/black.png"
+            alt="Los Angeles"
+            class="d-block w-100"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../src/images/not-black.png"
+            alt="Chicago"
+            class="d-block w-100"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../src/images/not-not-black.png"
+            alt="New York"
+            class="d-block w-100"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#preview-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#preview-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Plamen Michev -->
     <main>
-        <section class="intro-description">
-            <div>
+        <section class="row align-items-center my-5 w-75 mx-auto">
+            
+            <div class="col-md-7 order-md-first">
                 <h1>Who are we?</h1>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus repudiandae, fuga aliquid aut beatae quis at cumque! Sequi tempore, voluptate sunt repudiandae cumque deserunt hic facere facilis. Quae, aliquid temporibus.
                     <span class="read-more-link"><a href="contact.html">Read more...</a></span>
                 </p>
             </div>
+
+            <img class="col-md-5" src="https://placehold.co/600x400" alt="street with buildings and roads">
+        </section>
+
+        <section class="w-75 my-5 mx-auto">
+            <h2 class="mb-4">What can we do?</h2>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <article class="bg-secondary rounded  p-3">
+                        <div class="row">
+                            <div class="col-md-7 text-content">
+                                <h3>Residential</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            </div>
+                            
+                            <img class="col-md-5" src="https://placehold.co/600x400" alt="house with a garden">
+                        </div>
+                        
+                        <a class="cta-button bg-primary w-100 rounded-pill p-2 mx-auto mt-2 row justify-content-center" href="prices.html">See prices</a>
+                    </article>
+                </div>
+
+                <div class="col-md-6">
+                    <article class="bg-secondary rounded col p-3">
+                        <div class="row">
+                            <div class="col-md-7 text-content">
+                                <h3>Residential</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            </div>
+
+                            <img class="col-md-5" src="https://placehold.co/600x400" alt="house with a garden">
+                        </div>
+
+                        <a class="cta-button bg-primary w-100 rounded-pill p-2 mx-auto mt-2 row justify-content-center" href="prices.html">See prices</a>
+                    </article>
+                </div>
+
+                <div class="col-md-6">
+                    <article class="bg-secondary rounded p-3">
+                        <div class="row">
+                            <div class="col-md-7 text-content">
+                                <h3>Residential</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            </div>
+                            
+                            <img class="col-md-5" src="https://placehold.co/600x400" alt="house with a garden">
+                        </div>
+                        
+                        <a class="cta-button bg-primary w-100 rounded-pill p-2 mx-auto mt-2 row justify-content-center" href="prices.html">See prices</a>
+                    </article>
+                </div>
+
+                
+                <div class="col-md-6">
+                    <article class="bg-secondary rounded col p-3">
+                        <div class="row">
+                            <div class="col-md-7 text-content">
+                                <h3>Residential</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                            </div>
+
+                            <img class="col-md-5" src="https://placehold.co/600x400" alt="house with a garden">
+                        </div>
+
+                        <a class="cta-button bg-primary w-100 rounded-pill p-2 mx-auto mt-2 row justify-content-center" href="prices.html">See prices</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-75 my-5 mx-auto">
+            <h2>Current work</h2>
             
-            <img src="https://placehold.co/600x400" alt="street with buildings and roads">
-        </section>
+            <div class="row mb-4">
+                <img class="rounded-circle col-md-6" src="https://placehold.co/600x400" alt="">
 
-        <h2>What we can do?</h2>
-        <section class="building-types-wrapper">
-            <article class="building-type-wrapper">
-                <div class="content-section">
-                    <div class="text-content">
-                        <h3>Residential</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    </div>
-
-                    <img src="https://placehold.co/600x400" alt="house with a garden">
-                </div>
-
-                <a class="cta-button" href="prices.html">See prices</a>
-            </article>
-        </section>
-
-        <h2>Current work</h2>
-        <section class="current-works-wrapper">
-            <div class="current-work-wrapper">
-                <div class="cirle-image-wrapper">
-                    <img src="https://placehold.co/600x400" alt="">
-                </div>
-
-                <div class="current-work-text">
+                <div class="col-md-6">
                     <h3>Project Name</h3>
                     <p>Commercial Building,  63 000 man hours used</p>
-                    <p>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore similique pariatur, animi expedita nemo totam minus possimus ab tenetur libero? Nihil omnis quis aut magni est praesentium rerum adipisci asperiores.
+                        <span class="read-more-link"><a href="current-project.html">Read more...</a></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img class="rounded-circle col-md-6" src="https://placehold.co/600x400" alt="">
+
+                <div class="col-md-6 order-md-first">
+                    <h3>Project Name</h3>
+                    <p>Commercial Building,  63 000 man hours used</p>
+                    <p class="">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. 
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore similique pariatur, animi expedita nemo totam minus possimus ab tenetur libero? Nihil omnis quis aut magni est praesentium rerum adipisci asperiores.
                         <span class="read-more-link"><a href="current-project.html">Read more...</a></span>
@@ -74,14 +234,41 @@
             </div>
         </section>
 
-        <h2>Let me go through our process</h2>
-        
-        
-        <section class="video-section">
-            <h2>Watch our latest project video</h2>
-            <video src="../assets/videos/latest-project.mp4" controls></video>
+    
+        <section class="w-75 my-5 mx-auto">    
+            <h4>Let me go through our process! Watch our latest project video:</h4>
+
+            <video class="w-100" src="https://www.bigbuckbunny.org/" controls></video>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row w-75 my-5 mx-auto">
+            <div class="col-md-4">
+                <h3>Bob's Construction Company</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                    voluptatum.
+                </p>
+            </div>
+    
+            <div class="col-md-3">
+                <h3>Useful links</h3>
+                <p><a href="pricing.html">Pricing</a></p>
+                <p>  <a href="portfolio.html">Portfolio</a></p>
+                    <p> <a href="current-project.html">Ongoing project</a></p>
+                    <p> <a href="contact.html">Contact</a></p>
+            </div>
+    
+            <div class="col-md-5">
+                <h3>Contact us</h3>
+                <p>Phone: 0123456789</p>
+                <p>Email: bobthebuilder@company.com</p>
+            </div>
+
+            <p class="mx-auto text-center mt-3">Created by Group 2 ©</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
