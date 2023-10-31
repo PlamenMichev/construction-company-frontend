@@ -47,3 +47,8 @@ h1, h2 {
     background-color: var(--accent-color);
     color: white;
 }
+
+.cta-button:hover {
+    color: white;
+    opacity: 0.8;
+}
