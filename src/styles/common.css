@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.logo {
+    width: 60px;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -26,19 +30,25 @@ img {
 }
 
 :root {
-    --primary-color: #f5f5f5;
-    --secondary-color: #000;
-    --tertiary-color: #fff;
-    --quaternary-color: #e0e0e0;
-    --quinary-color: #bdbdbd;
-    --senary-color: #757575;
-    --septenary-color: #616161;
-    --octonary-color: #424242;
-    --nonary-color: #212121;
-    --denary-color: #000;
+    --primary-color: #947f57;
+    --secondary-color: #B4AA99;
+    --accent-color: #4D8D7D;
 }
 
-body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+h1, h2 {
+    color: var(--primary-color);
+}
+
+.read-more-link > a {
+    color: var(--accent-color);
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.cta-button:hover {
+    color: white;
+    opacity: 0.8;
 }
