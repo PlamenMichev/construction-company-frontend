@@ -1,161 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/portfolio.css" />
+    <title>Portfolio</title>
+  </head>
 
-  <link rel="stylesheet" href="./styles/common.css" />
-  <link rel="stylesheet" href="./styles/portfolio.css">
-  <title>Portfolio</title>
-</head>
+  <body>
+    <!--Toma Alexandru-->
+    <nav class="navbar navbar-expand-sm justify-content-center px-4">
+      <a class="navbar-brand flex-grow-1" href="index.html">
+        <img src="../assets/images/logo.png" alt="Logo" class="logo" />
+      </a>
 
-<body>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!--Toma Alexandru-->
-  <nav class="navbar navbar-expand-sm justify-content-center px-4">
-    <a class="navbar-brand flex-grow-1" href="index.html">
-      <img src="../assets/images/logo.png" alt="Logo" class="logo" />
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="pricing.html">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="current-project.html">Ongoing project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
-  <h1 class="text-center mb-5">These are some of our finished projects</h1>
-
-  <main class="w-75 mx-auto">
-    <div class="row mb-4 align-items-center rounded project-portfolio-wrapper p-4">
-      <img class="rounded col-md-6 p-3" src="../assets/images/res_price.jpg" alt="" />
-
-      <div class="col-md-6">
-        <h3>Project Name</h3>
-        <p>Residential project</p>
-
-        <p>The building incorporates sustainable design features, including energy-efficient lighting, smart heating and
-          cooling systems, and eco-friendly materials. These elements not only reduce the environmental footprint but
-          also result in long-term cost savings for residents.</p>
-        <ul>
-          <li>Man-hours invested: 5000</li>
-          <li>Total price: 4000$</li>
-          <li>Project duration: 5 months</li>
-          <li>Number of kitchens: 1</li>
-          <li>Number of bathrooms: 2</li>
-          <li>Number of stories:2</li>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="current-project.html">Ongoing project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
         </ul>
       </div>
-    </div>
+    </nav>
 
-    <div class="row mb-4 align-items-center rounded project-portfolio-wrapper p-4">
-      <img class="rounded col-md-6" src="../assets/images/commercial_price.jpg" alt="" />
+    <h1 class="text-center mb-5">These are some of our finished projects</h1>
 
-      <div class="col-md-6 order-md-first">
-        <h3>Project Name</h3>
-        <p>Commercial project</p>
+    <main class="w-75 mx-auto">
+      <div
+        class="row mb-4 align-items-center rounded project-portfolio-wrapper p-4"
+      >
+        <img
+          class="rounded col-md-6 p-3"
+          src="../assets/images/res_price.jpg"
+          alt=""
+        />
 
-        <p>Inside, Bob`s Plaza offers a versatile environment that adapts to a wide range of
-          business needs. Spacious retail spaces, modern office suites, and well-equipped conference facilities cater to
-          a diverse array of commercial enterprises.</p>
-        <ul>
-          <li>Man-hours invested: 6250</li>
-          <li>Totla price: 1.100.000$</li>
-          <li>Project duration: 18 months</li>
-          <li>Number of floors: 8</li>
-        </ul>
-      </div>
-    </div>
+        <div class="col-md-6">
+          <h3>Project Name</h3>
+          <p>Residential project</p>
 
-    <div class="row mb-4 align-items-center rounded project-portfolio-wrapper p-4">
-      <img class="rounded col-md-6" src="../assets/images/industrial_price.jpg" alt="" />
-
-      <div class="col-md-6">
-        <h3>Project Name</h3>
-        <p>Industrial project</p>
-
-        <p>Inside, the building offers a highly adaptable and spacious environment. The open
-          floor plan, high ceilings, and expansive loading docks ensure a versatile space ready to accommodate various
-          manufacturing and warehousing needs.</p>
-        <ul>
-          <li>Man-hours invested: 10000</li>
-          <li>Total price: 6.000.000$</li>
-          <li>Project duration: 32 months</li>
-
-        </ul>
-      </div>
-    </div>
-
-    <div class="row mb-4 align-items-center rounded project-portfolio-wrapper p-4">
-      <img class="rounded col-md-6" src="../assets/images/roadc.jpg" alt="" />
-
-      <div class="col-md-6 order-md-first">
-        <h3>Project Name</h3>
-        <p>Road construction project</p>
-
-        <p>The road is designed to provide smooth and safe travel for all vehicles, from commuter traffic to freight
-          transportation. It features advanced engineering and high-quality materials to ensure long-term durability and
-          minimal maintenance.</p>
-        <ul>
-          <li>Man-hours invested: 7000</li>
-          <li>Total price: 2.500.000$</li>
-          <li>Project duration: 16 months</li>
-          <li>Number of tunnels: 3</li>
-          
-        </ul>
-      </div>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="mt-5">
-    <div class="row w-75 my-5 mx-auto">
-      <div class="col-md-4">
-        <h3>Bob's Construction Company</h3>
-        <p>
-          At Bob the Builder, we're here to bring your construction dreams to life. Get in touch with us to discuss your
-          project or learn more about our services. Your vision is our mission!
-        </p>
+          <p>
+            The building incorporates sustainable design features, including
+            energy-efficient lighting, smart heating and cooling systems, and
+            eco-friendly materials. These elements not only reduce the
+            environmental footprint but also result in long-term cost savings
+            for residents.
+          </p>
+          <ul>
+            <li>Man-hours invested: 5000</li>
+            <li>Total price: 4000$</li>
+            <li>Project duration: 5 months</li>
+            <li>Number of kitchens: 1</li>
+            <li>Number of bathrooms: 2</li>
+            <li>Number of stories:2</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="col-md-3">
-        <h3>Useful links</h3>
-        <p><a href="pricing.html">Pricing</a></p>
-        <p><a href="portfolio.html">Portfolio</a></p>
-        <p><a href="current-project.html">Ongoing project</a></p>
-        <p><a href="contact.html">Contact</a></p>
+      <div
+        class="row mb-4 align-items-center rounded project-portfolio-wrapper p-4"
+      >
+        <img
+          class="rounded col-md-6"
+          src="../assets/images/commercial_price.jpg"
+          alt=""
+        />
+
+        <div class="col-md-6 order-md-first">
+          <h3>Project Name</h3>
+          <p>Commercial project</p>
+
+          <p>
+            Inside, Bob`s Plaza offers a versatile environment that adapts to a
+            wide range of business needs. Spacious retail spaces, modern office
+            suites, and well-equipped conference facilities cater to a diverse
+            array of commercial enterprises.
+          </p>
+          <ul>
+            <li>Man-hours invested: 6250</li>
+            <li>Totla price: 1.100.000$</li>
+            <li>Project duration: 18 months</li>
+            <li>Number of floors: 8</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="col-md-5">
-        <h3>Contact us</h3>
-        <p>Phone: 0123456789</p>
-        <p>Email: bobthebuilder@company.com</p>
+      <div
+        class="row mb-4 align-items-center rounded project-portfolio-wrapper p-4"
+      >
+        <img
+          class="rounded col-md-6"
+          src="../assets/images/industrial_price.jpg"
+          alt=""
+        />
+
+        <div class="col-md-6">
+          <h3>Project Name</h3>
+          <p>Industrial project</p>
+
+          <p>
+            Inside, the building offers a highly adaptable and spacious
+            environment. The open floor plan, high ceilings, and expansive
+            loading docks ensure a versatile space ready to accommodate various
+            manufacturing and warehousing needs.
+          </p>
+          <ul>
+            <li>Man-hours invested: 10000</li>
+            <li>Total price: 6.000.000$</li>
+            <li>Project duration: 32 months</li>
+          </ul>
+        </div>
       </div>
 
-      <p class="mx-auto text-center mt-3">Created by Group 2 ©</p>
-    </div>
-  </footer>
+      <div
+        class="row mb-4 align-items-center rounded project-portfolio-wrapper p-4"
+      >
+        <img class="rounded col-md-6" src="../assets/images/roadc.jpg" alt="" />
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+        <div class="col-md-6 order-md-first">
+          <h3>Project Name</h3>
+          <p>Road construction project</p>
 
+          <p>
+            The road is designed to provide smooth and safe travel for all
+            vehicles, from commuter traffic to freight transportation. It
+            features advanced engineering and high-quality materials to ensure
+            long-term durability and minimal maintenance.
+          </p>
+          <ul>
+            <li>Man-hours invested: 7000</li>
+            <li>Total price: 2.500.000$</li>
+            <li>Project duration: 16 months</li>
+            <li>Number of tunnels: 3</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+      <div class="row w-75 my-5 mx-auto">
+        <div class="col-md-4">
+          <h3>Bob's Construction Company</h3>
+          <p>
+            At Bob the Builder, we're here to bring your construction dreams to
+            life. Get in touch with us to discuss your project or learn more
+            about our services. Your vision is our mission!
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <h3>Useful links</h3>
+          <p><a href="pricing.html">Pricing</a></p>
+          <p><a href="portfolio.html">Portfolio</a></p>
+          <p><a href="current-project.html">Ongoing project</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="col-md-5">
+          <h3>Contact us</h3>
+          <p>Phone: 0123456789</p>
+          <p>Email: bobthebuilder@company.com</p>
+        </div>
+
+        <p class="mx-auto text-center mt-3">Created by Group 2 ©</p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
