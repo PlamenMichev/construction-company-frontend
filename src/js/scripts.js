@@ -1,12 +1,13 @@
 // Load the projects
 $(document).ready(function () {
   // Load the projects
-  console.log("Loading projects...");
+
+  // Read from the XML file
   $.get("xml/projects.xml", function (data) {
-    // Load the projects
-    console.log("Projects loaded.");
+    // Get the tag with all the projects (only the first 4)
     var projects = $(data).find("projects").slice(0, 4);
 
+    // For each project, get the name, type, manHours, totalHours, budget, timeline and size
     projects.each((index, element) => {
       const name = $(element).find("name").text();
       const type = capitalizeFirstLetter($(element).find("type").text());
@@ -18,6 +19,7 @@ $(document).ready(function () {
       const timeline = $(element).find("timeline").text();
       const size = $(element).find("size").text();
 
+      // Create the elements to append to the DOM
       const nameH3 = $("<h3></h3>").text(name);
       const pType = $("<p></p>").text(type);
 
@@ -33,6 +35,7 @@ $(document).ready(function () {
       );
       const sizeLi = $("<li></li>").text("Size: " + size);
 
+      // Append the elements to the DOM
       const elementToAppendTo = $(".project-info")[index];
       $(elementToAppendTo).append(nameH3);
       $(elementToAppendTo).append(pType);
@@ -45,6 +48,7 @@ $(document).ready(function () {
   });
 });
 
+// Capitalize the first letter of a string
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
